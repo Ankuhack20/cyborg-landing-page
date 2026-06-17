@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyborg X - Future of Technology</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Orbitron',sans-serif;
+}
+
+body{
+background:#050816;
+color:white;
+overflow-x:hidden;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(0,0,0,0.8);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#00ffff;
+text-shadow:0 0 10px #00ffff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(135deg,#050816,#091f3d);
+}
+
+.hero h1{
+font-size:4rem;
+color:#00ffff;
+text-shadow:0 0 20px #00ffff;
+}
+
+.hero p{
+margin-top:20px;
+font-size:1.2rem;
+max-width:700px;
+}
+
+.btn{
+margin-top:30px;
+padding:15px 35px;
+background:#00ffff;
+color:black;
+border:none;
+border-radius:30px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 0 20px #00ffff;
+}
+
+.section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:50px;
+color:#00ffff;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#0b1325;
+padding:30px;
+border:1px solid #00ffff;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #00ffff;
+}
+
+.card h3{
+margin-bottom:15px;
+color:#00ffff;
+}
+
+.about{
+text-align:center;
+max-width:900px;
+margin:auto;
+line-height:1.8;
+}
+
+.contact{
+max-width:600px;
+margin:auto;
+}
+
+.contact input,
+.contact textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+background:#0b1325;
+border:1px solid #00ffff;
+color:white;
+border-radius:10px;
+}
+
+.contact button{
+width:100%;
+padding:15px;
+background:#00ffff;
+border:none;
+font-weight:bold;
+cursor:pointer;
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:black;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">CYBORG X</div>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+<h1>CYBORG X</h1>
+<p>
+Experience the fusion of human intelligence and machine power.
+Discover the future of AI, robotics, cybersecurity and smart automation.
+</p>
+<button class="btn">Explore Future</button>
+</section>
+
+<section class="section" id="features">
+<h2 class="section-title">Features</h2>
+
+<div class="features">
+
+<div class="card">
+<h3>Artificial Intelligence</h3>
+<p>Advanced AI systems capable of learning and adapting to human needs.</p>
+</div>
+
+<div class="card">
+<h3>Cyber Security</h3>
+<p>Protecting digital infrastructure with intelligent defense systems.</p>
+</div>
+
+<div class="card">
+<h3>Neural Interface</h3>
+<p>Connecting humans and machines through next-generation technology.</p>
+</div>
+
+<div class="card">
+<h3>Smart Automation</h3>
+<p>Automating complex processes for maximum efficiency and productivity.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="about">
+<h2 class="section-title">About Cyborg X</h2>
+
+<div class="about">
+<p>
+Cyborg X represents the next evolution of technology where humans and
+machines work together seamlessly. Through artificial intelligence,
+robotics, neural networks and cyber security, we aim to build a smarter,
+safer and more connected future.
+</p>
+</div>
+</section>
+
+<section class="section" id="contact">
+<h2 class="section-title">Contact Us</h2>
+
+<div class="contact">
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button>Send Message</button>
+</div>
+</section>
+
+<footer>
+<p>© 2026 CYBORG X | Future Technology Landing Page</p>
+</footer>
+
+</body>
+</html>
